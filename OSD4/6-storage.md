@@ -48,7 +48,7 @@ if you enter `ls` you can see all the files you created.  Next, let's open the f
 
 `cat test-pv.txt`
 
-You should see the text you entered in the UI.
+You should see the text you entered in the UI.  The whole flow would look like the below:
 
 ```shell
 $ oc get pods

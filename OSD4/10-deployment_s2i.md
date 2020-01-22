@@ -17,7 +17,7 @@ In the next section we will trigger automated builds based on changes to the sou
 #### 2. Create a project
 Create a new project for this part. Let's call it `ostoy-s2i`.  
 
-You can create a new project by running `oc new-project ostoy-s2i`. You can create a new project from the CLI by running `oc new-project ostoy-s2i` or use the OpenShift Web Console.
+You can create a new project from the CLI by running `oc new-project ostoy-s2i` or use the OpenShift Web Console.
 
 ### Steps to Deploy OSToy imperatively using S2I
 
