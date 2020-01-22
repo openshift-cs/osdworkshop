@@ -12,7 +12,7 @@ Click *Display Token*
 
 Copy the command under where it says "Log in with this token". Then go to your terminal and paste that command and press enter.  You will see a similar confirmation message if you successfully logged in.
 
-```
+```shell
 $ oc login --token=RYhFlXXXXXXXXXXXX --server=https://api.osd4-demo.abc1.p1.openshiftapps.com:6443
 Logged into "https://api.osd4-demo.abc1.p1.openshiftapps.com:6443" as "0kashi" using the token provided.
 
@@ -29,7 +29,7 @@ Create a new project called "ostoy" in your cluster by entering the following co
 
 You should receive the following response
 
-```
+```shell
 $ oc new-project ostoy
 Now using project "ostoy" on server "https://api.osd4-demo.abc1.p1.openshiftapps.com:6443".
 
@@ -61,7 +61,7 @@ In your command line deploy the microservice using the following command:
 `oc apply -f ostoy-microservice-deployment.yaml`
 
 You should see the following response:
-```
+```shell
 $ oc apply -f ostoy-microservice-deployment.yaml
 deployment.apps/ostoy-microservice created
 service/ostoy-microservice-svc created
@@ -85,7 +85,7 @@ In your command line, deploy the frontend along with creating all objects mentio
 
 You should see all objects created successfully
 
-```
+```shell
 $ oc apply -f ostoy-fe-deployment.yaml
 persistentvolumeclaim/ostoy-pvc created
 deployment.apps/ostoy-frontend created
@@ -102,7 +102,7 @@ Get the route so that we can access the application via `oc get route`
 
 You should see the following response:
 
-```
+```shell
 NAME          HOST/PORT                                       PATH      SERVICES              PORT      TERMINATION   WILDCARD
 ostoy-route   ostoy-route-ostoy.apps.osd4-demo.abc1.p1.openshiftapps.com  ostoy-frontend-svc   <all>             None
 ```

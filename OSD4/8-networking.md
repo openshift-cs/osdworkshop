@@ -15,7 +15,7 @@ Click on *Networking* in the left menu. Review the networking configuration. The
 #### 2. Lookup internal IP address of the service
 Enter the name of the microservice we created in the right tile ("Hostname Lookup") following the format of `my-svc.my-namespace.svc.cluster.local` which we created in the service definition of `ostoy-microservice.yaml` which can be seen here:
 
-```
+```shell
 apiVersion: v1
 kind: Service
 metadata:
@@ -47,7 +47,7 @@ If we look at the tile on the left we should see one box randomly changing color
 #### 4. Confirm number of pods running
 To confirm that we only have one pod running for our microservice, run the following command, or use the web UI.
 
-```
+```shell
 $ oc get pods
 NAME                                   READY     STATUS    RESTARTS   AGE
 ostoy-frontend-679cb85695-5cn7x       1/1       Running   0          1h
@@ -62,7 +62,7 @@ Let's change our microservice definition yaml to reflect that we want 3 pods ins
 
 It will look like this
 
-```
+```shell
 spec:
     selector:
       matchLabels:
