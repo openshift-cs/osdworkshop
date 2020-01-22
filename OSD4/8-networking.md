@@ -74,7 +74,7 @@ spec:
 `oc apply -f ostoy-microservice-deployment.yaml`
 
 - Confirm that there are now 3 pods via the CLI (`oc get pods`) or the web UI (*Workloads > Deployments > ostoy-microservice*).
-- See this visually by visiting the OSToy app and seeing how many boxes you now see.  It should be three.
+- See this visually by visiting the OSToy app and counting how many boxes there are now.  It should be three.
 
 ![UI Scale](images/8-ostoy-colorspods.png)
 
@@ -83,7 +83,7 @@ Now we will scale the pods down using the command line.
 
 - Execute the following command from the CLI: `oc scale deployment ostoy-microservice --replicas=2`
 - Confirm that there are indeed 2 pods, via the CLI (`oc get pods`) or the web UI.
-- See this visually by visiting the OSToy App and seeing how many boxes you now see.  It should be two.
+- See this visually by visiting the OSToy app and counting how many boxes there are now.  It should be two.
 
 #### 7. Scale down via web UI
 Lastly, let's use the web UI to scale back down to one pod.  
@@ -93,5 +93,5 @@ Lastly, let's use the web UI to scale back down to one pod.
 
 ![UI Scale](images/8-ostoy-uiscale1.png)
 
-- See this visually by visiting the OSToy app and seeing how many boxes you now see.  It should be one.
+- See this visually by visiting the OSToy app and counting how many boxes there are now.  It should be one.
 - You can also confirm this via the CLI or the web UI
